@@ -1,0 +1,56 @@
+.grid-body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+body {
+  background-color: black;
+}
+
+.body1 {
+  grid-area: 2/1/6/2;
+}
+
+.body2 {
+  grid-area: 2/4/6/5;
+}
+
+.body3 {
+  grid-area: 1/2/2/4;
+}
+
+.body4 {
+  grid-area: 2/2/3/4;
+}
+
+.body5 {
+  grid-area: 3/2/6/3;
+}
+
+.body6 {
+  grid-area: 3/3/6/4;
+}
+
+
+.body1, 
+.body2, 
+.body3, 
+.body4, 
+.body5, 
+.body6, 
+.body7 {
+  border: solid black 3px;
+  background-color: greenyellow;
+  color: black;
+  font-weight: 900;
+}
+
+/*Body*/
+
+.scroll {
+  border: solid black 3px;
+  background-color: white;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
