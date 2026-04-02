@@ -6,25 +6,77 @@
   <body>
     <div class="grid-body">
       <div class="body1">
-        <h1>Body1</h1>
-        <ul id="menu">
+        <h1 class="centered">List of Currency</h1>
+        <ul id="menu" class="scroll">
           
         </ul>
       </div>
       <div class="body2">
-        <h2>Body2</h2>
+        <h1 class="centered">How this works?</h1>
+        <div class="container">
+          <p>
+            Welcome! Thank you for using our program! To use this program, you will need to do a few things before you see your desired results. Below is a comprehensive list, numbered in order, for you to follow.
+          </p> 
+          <ul>
+            <li class="listed">Step 1: Enter the amount of USD desired and click on "Submit Form".</li>
+            <li class="listed">Step 2: On the far left list of currencies, click on which you desire. Clicking this automatically primes it for conversion.</li>
+            <li class="listed">Step 3: Once both are chosen, click "See your results" to see the results.</li>
+            <li class="listed">Step 4: To use this program again, click "Reset Form" to choose new currencies.</li>
+          </ul>
+          <p>
+            NOTE: This is currently only for USD to another currency. Additional functionality will be added on a future date.
+          </p>
+        </div></br>
+        <div class="container">
+          <h1 class="centered">Resource</h1>
+          <p><a href="#">GitHub Page</a></p>
+          <p><a href="#">API Website</a></p>
+          <p><a href="#">Fidgetech Link</a></p>
+        </div>
       </div>
       <div class="body3">
-        <h1>Body3</h1>
+        <div class="container">
+          <h1 class="centered">Currency Conversion!</h1>
+          <p class="centered">By: JButch-99</p>
+        </div>
       </div>
       <div class="body4">
         <h1>Body4</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="container">
+              <label for="usdAmount">USD Amount:</label>
+              <input id="usdAmount" type="number" inputmode="decimal"></br>
+              <button id="usdInput">Submit Value</button>
+              <button id="resetArray">Reset Form</button>
+              <button id="submitAll">See your results</button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="container">
+              <ul>
+                <li>Chosen Currency: <span id="type"></span> <span id="amount"></span></li>
+                <li>USD Amount: <span id="usd"></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="body5">
-        <h1>Body5</h1>
+        <div class="container">
+          <h1 class="centered">Your Results:</h1>
+          <p class="results">USD to <span id="converted">___</span> is <span id="results">(result)</span></p>
+        </div>
       </div>
       <div class="body6">
-        <h1>Body6</h1>
+        <h1 class="centered">Logs</h1>
+        <div class="scroll">
+          <div class="container">
+            <ul id="logs">
+
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </body>

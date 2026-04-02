@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
+  padding: 30px;
 }
 
 body {
@@ -44,13 +45,65 @@ body {
   background-color: greenyellow;
   color: black;
   font-weight: 900;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 15px;
 }
 
 /*Body*/
 
+.listed {
+  margin: 5%;
+  background-color: gray;
+  border: solid black 3px;
+  color: white;
+}
+
 .scroll {
+  flex-grow: 1;
+  overflow-y: auto;
+  max-height: 500px;
+  padding: 3px;
+  margin: 10px 1%;
   border: solid black 3px;
   background-color: white;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  color: black;
+  text-align: center;
+  list-style: none;
+  font-weight: bolder;
 }
+
+.container {
+  border: solid black 3px;
+  background-color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.centered {
+  text-align: center;
+  border: solid gray 3px;
+  color: white;
+  background-color: black;
+  margin: 4px;
+  padding: 10px;
+}
+
+.scroll button {
+  display: block;
+  margin: 6px auto;
+  width: 100%;
+  border-radius: 25px;
+  font-size: 18px;
+  padding: 12px 15px;
+}
+
+button:hover {
+  background-color: #6A00FF;
+  color: #00CFFF;
+}
+
+button:active {
+  transform: scale(1px);
+}
+
