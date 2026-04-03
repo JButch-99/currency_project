@@ -41,12 +41,12 @@
         </div>
       </div>
       <div class="body4">
-        <h1>Body4</h1>
+        
         <div class="row">
           <div class="col-md-6">
             <div class="container">
               <label for="usdAmount">USD Amount:</label>
-              <input id="usdAmount" type="number" inputmode="decimal"></br>
+              <input id="usdAmount" type="number" inputmode="decimal" min="0"></br>
               <button id="usdInput">Submit Value</button>
               <button id="resetArray">Reset Form</button>
               <button id="submitAll">See your results</button>
@@ -65,17 +65,15 @@
       <div class="body5">
         <div class="container">
           <h1 class="centered">Your Results:</h1>
-          <p class="results">USD to <span id="converted">___</span> is <span id="results">(result)</span></p>
+          <p id="results"></p>
         </div>
       </div>
       <div class="body6">
         <h1 class="centered">Logs</h1>
-        <div class="scroll">
-          <div class="container">
-            <ul id="logs">
+        <div class="container">
+          <ul class="scroll" id="logs">
 
-            </ul>
-          </div>
+          </ul>
         </div>
       </div>
     </div>
