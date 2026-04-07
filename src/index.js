@@ -45,8 +45,6 @@ function updateCurrencyLog(amount, variable, variableName, results) {
   loggedResults.append(li);
 }
 
-
-
 resetButton.addEventListener("click", function() {
   resetCurrencyInfo();
   resetValues();
